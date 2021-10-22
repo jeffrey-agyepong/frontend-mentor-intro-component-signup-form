@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 1400px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px auto;
+    overflow-x: visible;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%) ;
+    color: white;
+    font-family:'Times New Roman', Times, serif
+}
+#index-banner{
+    background-image: url(../img/bg-intro-desktop.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.container{
+    padding: 40px;
+    margin: 40px;
+}
+
+.main_text{
+    padding: 10px;
+    margin: 10px;
+    font-size: 65px;
+}
+.main_par{
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.sect_form{
+    background: white;
+    border-radius: 20px;
+    height: 500px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #00000030;
+}
+.preform_text{
+    background: hsl(248, 32%, 49%);
+border-radius: 20px;
+padding: 25px;
+margin: 15px;
+color: white;
+box-shadow: 5px 5px 5px 5px #00000030;
+}
+.sect_text{
+    margin: 145px 0 0 0;
+    padding: 20px;
+}
+
+.form_prop{
+    display: block;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.trial_btn{
+    display: block;
+    margin: 0 auto;
+    background:  hsl(154, 59%, 51%);
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+a:hover{
+    color: red;
+}
+.trial_btn:hover{
+    background: rgb(135, 211, 148);
+}
+.center{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.black{
+    color: black;
+}
+@media (max-width: 800px) {
+    html, body{
+        width: 375px;
+    }
+
+    .grid_container{
+        grid-template-columns: auto;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+        background: url(../img/bg-intro-mobile.png) !important;
+    }
+    .sect_text{
+        margin: 0;
+        padding: 0;
+    }
+    .main_text{
+        text-align: center;
+    }
+    .main_par{
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    html, body{
+        width: 100%;
+    }
+}
